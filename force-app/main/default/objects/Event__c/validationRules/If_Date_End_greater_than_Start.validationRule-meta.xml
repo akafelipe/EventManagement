@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Date_End_greater_than_Start</fullName>
+    <active>true</active>
+    <description>End Date/Time must be at-least 1 day ahead of Start Date/Time (If there is a value in End Date/Time field)</description>
+    <errorConditionFormula>AND(DATEVALUE(End__c) &lt;= DATEVALUE(Start__c), NOT(ISNULL(End__c)))</errorConditionFormula>
+    <errorDisplayField>End__c</errorDisplayField>
+    <errorMessage>End Date/Time must be at-least 1 day ahead of Start Date/Time (If there is a value in End Date/Time field)</errorMessage>
+</ValidationRule>

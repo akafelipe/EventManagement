@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Verified__c</fullName>
+    <description>Carries the info from the field Verified object LocationC</description>
+    <externalId>false</externalId>
+    <formula>LocationC__r.Verified__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Carries the info from the field Verified object LocationC</inlineHelpText>
+    <label>Location Verified</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
